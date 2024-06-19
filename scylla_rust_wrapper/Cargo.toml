@@ -1,0 +1,12 @@
+[package]
+name = "scylla_wrapper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+scylla = { version = "0.13" }
+tokio = { version = "1", features = ["full"] }
+lazy_static = { version = "1.4" }
+
+[lib]
+crate-type = ["cdylib"]
